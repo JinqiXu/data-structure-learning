@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xujinqi/data-structure-learning/LinearList/SqList/main.cpp
+myFunc.h
+/home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.h
+iostream
+-
+
+/home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.cpp
+myFunc.h
+/home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.h
+iostream
+-
+
+/home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.h
+

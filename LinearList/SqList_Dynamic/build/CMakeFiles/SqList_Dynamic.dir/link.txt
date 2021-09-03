@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/SqList_Dynamic.dir/src/main.cpp.o CMakeFiles/SqList_Dynamic.dir/src/myFunc.cpp.o  -o ../bin/SqList_Dynamic 
