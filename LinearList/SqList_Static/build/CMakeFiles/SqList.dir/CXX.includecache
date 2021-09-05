@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/xujinqi/data-structure-learning/LinearList/SqList/main.cpp
+/home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/main.cpp
 myFunc.h
-/home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.h
+/home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/myFunc.h
 iostream
 -
 
-/home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.cpp
+/home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/myFunc.cpp
 myFunc.h
-/home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.h
+/home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/myFunc.h
 iostream
 -
 
-/home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.h
+/home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/myFunc.h
 

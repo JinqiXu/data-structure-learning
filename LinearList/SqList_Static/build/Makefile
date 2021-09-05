@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xujinqi/data-structure-learning/LinearList/SqList
+CMAKE_SOURCE_DIR = /home/xujinqi/data-structure-learning/LinearList/SqList_Static
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xujinqi/data-structure-learning/LinearList/SqList/build
+CMAKE_BINARY_DIR = /home/xujinqi/data-structure-learning/LinearList/SqList_Static/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles /home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles /home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,59 +123,59 @@ SqList/fast:
 	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/build
 .PHONY : SqList/fast
 
-main.o: main.cpp.o
+src/main.o: src/main.cpp.o
 
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-myFunc.o: myFunc.cpp.o
-
-.PHONY : myFunc.o
+.PHONY : src/main.o
 
 # target to build an object file
-myFunc.cpp.o:
-	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/myFunc.cpp.o
-.PHONY : myFunc.cpp.o
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-myFunc.i: myFunc.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : myFunc.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-myFunc.cpp.i:
-	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/myFunc.cpp.i
-.PHONY : myFunc.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-myFunc.s: myFunc.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : myFunc.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-myFunc.cpp.s:
-	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/myFunc.cpp.s
-.PHONY : myFunc.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/myFunc.o: src/myFunc.cpp.o
+
+.PHONY : src/myFunc.o
+
+# target to build an object file
+src/myFunc.cpp.o:
+	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/src/myFunc.cpp.o
+.PHONY : src/myFunc.cpp.o
+
+src/myFunc.i: src/myFunc.cpp.i
+
+.PHONY : src/myFunc.i
+
+# target to preprocess a source file
+src/myFunc.cpp.i:
+	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/src/myFunc.cpp.i
+.PHONY : src/myFunc.cpp.i
+
+src/myFunc.s: src/myFunc.cpp.s
+
+.PHONY : src/myFunc.s
+
+# target to generate assembly for a file
+src/myFunc.cpp.s:
+	$(MAKE) -f CMakeFiles/SqList.dir/build.make CMakeFiles/SqList.dir/src/myFunc.cpp.s
+.PHONY : src/myFunc.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SqList"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... myFunc.o"
-	@echo "... myFunc.i"
-	@echo "... myFunc.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/myFunc.o"
+	@echo "... src/myFunc.i"
+	@echo "... src/myFunc.s"
 .PHONY : help
 
 

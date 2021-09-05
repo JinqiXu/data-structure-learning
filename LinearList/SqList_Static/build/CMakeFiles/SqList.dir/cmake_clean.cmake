@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "../bin/SqList"
   "../bin/SqList.pdb"
-  "CMakeFiles/SqList.dir/main.cpp.o"
-  "CMakeFiles/SqList.dir/myFunc.cpp.o"
+  "CMakeFiles/SqList.dir/src/main.cpp.o"
+  "CMakeFiles/SqList.dir/src/myFunc.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

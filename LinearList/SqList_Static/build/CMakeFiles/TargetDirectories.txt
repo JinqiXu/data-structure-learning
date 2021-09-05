@@ -1,3 +1,3 @@
-/home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles/rebuild_cache.dir
-/home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles/edit_cache.dir
-/home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles/SqList.dir
+/home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles/rebuild_cache.dir
+/home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles/edit_cache.dir
+/home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles/SqList.dir

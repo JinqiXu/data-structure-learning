@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xujinqi/data-structure-learning/LinearList/SqList
+CMAKE_SOURCE_DIR = /home/xujinqi/data-structure-learning/LinearList/SqList_Static
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xujinqi/data-structure-learning/LinearList/SqList/build
+CMAKE_BINARY_DIR = /home/xujinqi/data-structure-learning/LinearList/SqList_Static/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SqList.dir/depend.make
@@ -57,45 +57,45 @@ include CMakeFiles/SqList.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/SqList.dir/flags.make
 
-CMakeFiles/SqList.dir/main.cpp.o: CMakeFiles/SqList.dir/flags.make
-CMakeFiles/SqList.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SqList.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqList.dir/main.cpp.o -c /home/xujinqi/data-structure-learning/LinearList/SqList/main.cpp
+CMakeFiles/SqList.dir/src/main.cpp.o: CMakeFiles/SqList.dir/flags.make
+CMakeFiles/SqList.dir/src/main.cpp.o: ../src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SqList.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqList.dir/src/main.cpp.o -c /home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/main.cpp
 
-CMakeFiles/SqList.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SqList.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xujinqi/data-structure-learning/LinearList/SqList/main.cpp > CMakeFiles/SqList.dir/main.cpp.i
+CMakeFiles/SqList.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SqList.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/main.cpp > CMakeFiles/SqList.dir/src/main.cpp.i
 
-CMakeFiles/SqList.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SqList.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xujinqi/data-structure-learning/LinearList/SqList/main.cpp -o CMakeFiles/SqList.dir/main.cpp.s
+CMakeFiles/SqList.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SqList.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/main.cpp -o CMakeFiles/SqList.dir/src/main.cpp.s
 
-CMakeFiles/SqList.dir/myFunc.cpp.o: CMakeFiles/SqList.dir/flags.make
-CMakeFiles/SqList.dir/myFunc.cpp.o: ../myFunc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SqList.dir/myFunc.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqList.dir/myFunc.cpp.o -c /home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.cpp
+CMakeFiles/SqList.dir/src/myFunc.cpp.o: CMakeFiles/SqList.dir/flags.make
+CMakeFiles/SqList.dir/src/myFunc.cpp.o: ../src/myFunc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SqList.dir/src/myFunc.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SqList.dir/src/myFunc.cpp.o -c /home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/myFunc.cpp
 
-CMakeFiles/SqList.dir/myFunc.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SqList.dir/myFunc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.cpp > CMakeFiles/SqList.dir/myFunc.cpp.i
+CMakeFiles/SqList.dir/src/myFunc.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SqList.dir/src/myFunc.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/myFunc.cpp > CMakeFiles/SqList.dir/src/myFunc.cpp.i
 
-CMakeFiles/SqList.dir/myFunc.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SqList.dir/myFunc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.cpp -o CMakeFiles/SqList.dir/myFunc.cpp.s
+CMakeFiles/SqList.dir/src/myFunc.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SqList.dir/src/myFunc.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/myFunc.cpp -o CMakeFiles/SqList.dir/src/myFunc.cpp.s
 
 # Object files for target SqList
 SqList_OBJECTS = \
-"CMakeFiles/SqList.dir/main.cpp.o" \
-"CMakeFiles/SqList.dir/myFunc.cpp.o"
+"CMakeFiles/SqList.dir/src/main.cpp.o" \
+"CMakeFiles/SqList.dir/src/myFunc.cpp.o"
 
 # External object files for target SqList
 SqList_EXTERNAL_OBJECTS =
 
-../bin/SqList: CMakeFiles/SqList.dir/main.cpp.o
-../bin/SqList: CMakeFiles/SqList.dir/myFunc.cpp.o
+../bin/SqList: CMakeFiles/SqList.dir/src/main.cpp.o
+../bin/SqList: CMakeFiles/SqList.dir/src/myFunc.cpp.o
 ../bin/SqList: CMakeFiles/SqList.dir/build.make
 ../bin/SqList: CMakeFiles/SqList.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/SqList"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ../bin/SqList"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SqList.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/SqList.dir/clean:
 .PHONY : CMakeFiles/SqList.dir/clean
 
 CMakeFiles/SqList.dir/depend:
-	cd /home/xujinqi/data-structure-learning/LinearList/SqList/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xujinqi/data-structure-learning/LinearList/SqList /home/xujinqi/data-structure-learning/LinearList/SqList /home/xujinqi/data-structure-learning/LinearList/SqList/build /home/xujinqi/data-structure-learning/LinearList/SqList/build /home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles/SqList.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/xujinqi/data-structure-learning/LinearList/SqList_Static/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xujinqi/data-structure-learning/LinearList/SqList_Static /home/xujinqi/data-structure-learning/LinearList/SqList_Static /home/xujinqi/data-structure-learning/LinearList/SqList_Static/build /home/xujinqi/data-structure-learning/LinearList/SqList_Static/build /home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles/SqList.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SqList.dir/depend
 

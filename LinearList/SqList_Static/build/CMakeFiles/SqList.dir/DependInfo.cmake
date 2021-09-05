@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/xujinqi/data-structure-learning/LinearList/SqList/main.cpp" "/home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles/SqList.dir/main.cpp.o"
-  "/home/xujinqi/data-structure-learning/LinearList/SqList/myFunc.cpp" "/home/xujinqi/data-structure-learning/LinearList/SqList/build/CMakeFiles/SqList.dir/myFunc.cpp.o"
+  "/home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/main.cpp" "/home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles/SqList.dir/src/main.cpp.o"
+  "/home/xujinqi/data-structure-learning/LinearList/SqList_Static/src/myFunc.cpp" "/home/xujinqi/data-structure-learning/LinearList/SqList_Static/build/CMakeFiles/SqList.dir/src/myFunc.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

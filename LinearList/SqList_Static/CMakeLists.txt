@@ -4,4 +4,4 @@ project(SqList)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
-add_executable(SqList main.cpp myFunc.h myFunc.cpp)
+add_executable(SqList src/main.cpp src/myFunc.h src/myFunc.cpp)
