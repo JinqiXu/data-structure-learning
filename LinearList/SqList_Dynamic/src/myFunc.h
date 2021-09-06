@@ -13,5 +13,8 @@ typedef struct {
 
 void InitSqList(SqList& L);
 void IncreaseSize(SqList& L, int len);
-
+bool InsertList(SqList& L, int i, ElemType e);
+bool DeleteList(SqList& L, int i, ElemType& e);
+ElemType GetElem(SqList L, int i);
+int LocateElem(SqList L, ElemType e);
 #endif
