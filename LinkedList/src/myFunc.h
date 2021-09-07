@@ -10,5 +10,10 @@ typedef struct LNode {
 
 bool InitList(LinkedList& L);
 bool Empty(LinkedList L);
+bool InsertList(LinkedList& L, int i, ElemType e);
+bool InsertNextNode(LNode* p, ElemType e);
+bool InsertPriorNode(LNode* p, ElemType e);
+bool DeleteList(LinkedList& L, int i, ElemType& e);
+bool DeleteNode(LNode* p);
 
 #endif
