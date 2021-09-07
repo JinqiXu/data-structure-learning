@@ -12,12 +12,16 @@ int main()
 
     for (int i = 1; i < 10; i++) {
         InsertList(L, i, i);
-        cout << "i" << endl;
+        cout << i << " ";
     }
-    LNode* p = L;
-    while (p->next != NULL) {
-        cout << p->data << " ";
-        p = p->next;
-    }
+    cout << endl;
+    Print(L);
+
+    ElemType e;
+    DeleteList(L, 4, e);
+    Print(L);
+    DeleteList(L, 7, e);
+    Print(L);
+
     return 0;
 }

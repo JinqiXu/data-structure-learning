@@ -7,7 +7,6 @@ using namespace std;
 bool InitList(LinkedList& L)
 {
     LNode* p = (LNode*)malloc(sizeof(LNode));
-    cout << "2" << endl;
     if (L == NULL)
         return false;
     L->next = NULL;
@@ -23,8 +22,6 @@ bool Empty(LinkedList L)
 
 bool InsertList(LinkedList& L, int i, ElemType e)
 {
-    if (L->next == NULL)
-        return false;
     if (i < 1)
         return false;
     LNode* p;
@@ -98,5 +95,19 @@ bool DeleteNode(LNode* p)
     p->data = q->data;
     p->next = q->next;
     free(q);
+    return true;
+}
+
+bool Print(LinkedList L)
+{
+    LNode *p = L, *q = NULL;
+    if (p == NULL)
+        return false;
+    while (p->next != NULL) {
+        q = p->next;
+        cout << q->data << " ";
+        p = p->next;
+    }
+    cout << endl;
     return true;
 }

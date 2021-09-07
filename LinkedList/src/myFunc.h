@@ -15,5 +15,6 @@ bool InsertNextNode(LNode* p, ElemType e);
 bool InsertPriorNode(LNode* p, ElemType e);
 bool DeleteList(LinkedList& L, int i, ElemType& e);
 bool DeleteNode(LNode* p);
+bool Print(LinkedList L);
 
 #endif
