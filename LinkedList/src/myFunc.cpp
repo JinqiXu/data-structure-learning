@@ -24,13 +24,7 @@ bool InsertList(LinkedList& L, int i, ElemType e)
 {
     if (i < 1)
         return false;
-    LNode* p;
-    int j = 0;
-    p = L;
-    while (p != NULL && j < i - 1) {
-        p = p->next;
-        j++;
-    }
+    LNode* p = GetElem(L, i - 1);
     if (p == NULL)
         return false;
     LNode* q = (LNode*)malloc(sizeof(LNode));
@@ -71,12 +65,7 @@ bool DeleteList(LinkedList& L, int i, ElemType& e)
 {
     if (i < 1)
         return false;
-    LNode* p = L;
-    int j = 0;
-    while (p != NULL && j < i - 1) {
-        p = p->next;
-        j++;
-    }
+    LNode* p = GetElem(L, i - 1);
     if (p == NULL || p->next == NULL)
         return false;
     LNode* q = p->next;
@@ -110,4 +99,36 @@ bool Print(LinkedList L)
     }
     cout << endl;
     return true;
+}
+
+LNode* GetElem(LinkedList L, int i)
+{
+    if (i < 0)
+        return NULL;
+    LNode* p = L;
+    int j = 0;
+    while (p->next != NULL && j < i) {
+        p = p->next;
+        j++;
+    }
+    return p;
+}
+
+LNode* LocateElem(LinkedList L, ElemType e)
+{
+    LNode* p = L->next;
+    while (p != NULL && p->data != e)
+        p = p->next;
+    return p;
+}
+
+int Length(LinkedList L)
+{
+    int length = 0;
+    LNode* p = L;
+    while (p->next != NULL) {
+        p = p->next;
+        length++;
+    }
+    return length;
 }

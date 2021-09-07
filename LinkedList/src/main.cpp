@@ -17,6 +17,10 @@ int main()
     cout << endl;
     Print(L);
 
+    cout << GetElem(L, 4)->data << endl;
+    cout << LocateElem(L, 5)->data << endl;
+    cout << Length(L) << endl;
+
     ElemType e;
     DeleteList(L, 4, e);
     Print(L);

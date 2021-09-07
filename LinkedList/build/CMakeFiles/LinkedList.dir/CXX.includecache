@@ -6,9 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/xujinqi/data-structure-learning/LinkedList/src/main.cpp
+/home/xujinqi/data-structure-learning/LinkedList/src/myFunc.cpp
 myFunc.h
 /home/xujinqi/data-structure-learning/LinkedList/src/myFunc.h
+cstdlib
+-
 iostream
 -
 

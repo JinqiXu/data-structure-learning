@@ -16,5 +16,8 @@ bool InsertPriorNode(LNode* p, ElemType e);
 bool DeleteList(LinkedList& L, int i, ElemType& e);
 bool DeleteNode(LNode* p);
 bool Print(LinkedList L);
+LNode* GetElem(LinkedList L, int i);
+LNode* LocateElem(LinkedList L, ElemType e);
+int Length(LinkedList L);
 
 #endif
