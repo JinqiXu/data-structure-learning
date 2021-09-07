@@ -132,3 +132,37 @@ int Length(LinkedList L)
     }
     return length;
 }
+
+LinkedList List_TailInsert(LinkedList& L)
+{
+    int x;
+    L = (LinkedList)malloc(sizeof(LNode));
+    LNode *r = L, *s = L;
+    cin >> x;
+    while (x != -1) {
+        s = (LNode*)malloc(sizeof(LNode));
+        s->data = x;
+        r->next = s;
+        r = s;
+        cin >> x;
+    }
+    r->next = NULL;
+    return L;
+}
+
+LinkedList List_HeadInsert(LinkedList& L)
+{
+    LNode* s;
+    int x;
+    L = (LinkedList)malloc(sizeof(LNode));
+    L->next = NULL;
+    cin >> x;
+    while (x != -1) {
+        s = (LNode*)malloc(sizeof(LNode));
+        s->data = x;
+        s->next = L->next;
+        L->next = s;
+        cin >> x;
+    }
+    return L;
+}

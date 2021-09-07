@@ -19,5 +19,7 @@ bool Print(LinkedList L);
 LNode* GetElem(LinkedList L, int i);
 LNode* LocateElem(LinkedList L, ElemType e);
 int Length(LinkedList L);
+LinkedList List_TailInsert(LinkedList& L);
+LinkedList List_HeadInsert(LinkedList& L);
 
 #endif

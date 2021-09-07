@@ -6,15 +6,9 @@ using namespace std;
 int main()
 {
     LinkedList L;
-    InitList(L);
 
-    cout << Empty(L) << endl;
-
-    for (int i = 1; i < 10; i++) {
-        InsertList(L, i, i);
-        cout << i << " ";
-    }
-    cout << endl;
+    // L = List_HeadInsert(L);
+    L = List_TailInsert(L);
     Print(L);
 
     cout << GetElem(L, 4)->data << endl;
