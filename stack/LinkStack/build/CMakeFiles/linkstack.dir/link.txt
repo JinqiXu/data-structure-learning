@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/linkstack.dir/src/main.cpp.o CMakeFiles/linkstack.dir/src/myFunc.cpp.o  -o ../bin/linkstack 

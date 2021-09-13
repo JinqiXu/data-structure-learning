@@ -1,0 +1,3 @@
+/home/xujinqi/data-structure-learning/stack/LinkStack/build/CMakeFiles/rebuild_cache.dir
+/home/xujinqi/data-structure-learning/stack/LinkStack/build/CMakeFiles/edit_cache.dir
+/home/xujinqi/data-structure-learning/stack/LinkStack/build/CMakeFiles/linkstack.dir
