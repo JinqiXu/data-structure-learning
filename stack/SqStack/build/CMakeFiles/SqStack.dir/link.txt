@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/SqStack.dir/src/main.cpp.o CMakeFiles/SqStack.dir/src/myFunc.cpp.o  -o ../bin/SqStack 
