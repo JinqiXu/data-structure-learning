@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/SqQueue.dir/src/main.cpp.o CMakeFiles/SqQueue.dir/src/myFunc.cpp.o  -o ../bin/SqQueue 
