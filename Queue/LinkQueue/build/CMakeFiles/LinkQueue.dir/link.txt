@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/LinkQueue.dir/src/main.cpp.o CMakeFiles/LinkQueue.dir/src/myFunc.cpp.o  -o ../bin/LinkQueue 
