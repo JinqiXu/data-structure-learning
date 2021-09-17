@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xujinqi/data-structure-learning/Stack/BracketMatching/src/main.cpp
+myFunc.h
+/home/xujinqi/data-structure-learning/Stack/BracketMatching/src/myFunc.h
+cstdlib
+-
+iostream
+-
+
+/home/xujinqi/data-structure-learning/Stack/BracketMatching/src/myFunc.cpp
+myFunc.h
+/home/xujinqi/data-structure-learning/Stack/BracketMatching/src/myFunc.h
+iostream
+-
+
+/home/xujinqi/data-structure-learning/Stack/BracketMatching/src/myFunc.h
+
