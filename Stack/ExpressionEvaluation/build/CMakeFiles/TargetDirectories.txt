@@ -1,0 +1,3 @@
+/home/xujinqi/data-structure-learning/Stack/ExpressionEvaluation/build/CMakeFiles/rebuild_cache.dir
+/home/xujinqi/data-structure-learning/Stack/ExpressionEvaluation/build/CMakeFiles/edit_cache.dir
+/home/xujinqi/data-structure-learning/Stack/ExpressionEvaluation/build/CMakeFiles/main.dir

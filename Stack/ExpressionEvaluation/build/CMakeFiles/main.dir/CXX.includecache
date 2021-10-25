@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xujinqi/data-structure-learning/Stack/ExpressionEvaluation/src/main.cpp
+myFunc.h
+/home/xujinqi/data-structure-learning/Stack/ExpressionEvaluation/src/myFunc.h
+cstdio
+-
+iostream
+-
+
+/home/xujinqi/data-structure-learning/Stack/ExpressionEvaluation/src/myFunc.h
+
