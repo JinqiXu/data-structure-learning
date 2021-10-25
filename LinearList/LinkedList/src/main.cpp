@@ -11,6 +11,8 @@ int main()
     L = List_TailInsert(L);
     Print(L);
 
+    
+
     cout << GetElem(L, 4)->data << endl;
     cout << LocateElem(L, 5)->data << endl;
     cout << Length(L) << endl;
