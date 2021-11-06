@@ -24,3 +24,6 @@ void ClearStr(SString& S);
 void DestroyStr(SString& S);
 
 int Index_Normal(SString S, SString T);
+int Index_KMP(SString S, SString T);
+void Get_Next(SString T, int next[]);
+void Get_Nextval(SString T, int nextval[]);

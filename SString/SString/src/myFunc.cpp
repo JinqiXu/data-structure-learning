@@ -82,4 +82,54 @@ int Index(SString S, SString T)
     return 0;
 }
 
-int Index_Normal()
+int Index_KMP(SString S, SString T)
+{
+    int i = 1, j = 1;
+    int next[MaxSize];
+    Get_Next(T, next);
+    while (i <= S.length && j <= T.length) {
+        if (j == 0 || S.ch[i] == T.ch[j]) {
+            i++;
+            j++;
+        } else {
+            j = next[i];
+        }
+    }
+    if (j > T.length)
+        return i - T.length;
+    else
+        return 0;
+}
+
+void Get_Next(SString T, int next[])
+{
+    int i = 1;
+    int j = 0;
+    next[1] = 0;
+    while (i < T.length) {
+        if (j == 0 || T.ch[i] == T.ch[j]) {
+            ++i;
+            ++j;
+            next[i] = j;
+        } else {
+            j = next[j];
+        }
+    }
+}
+
+void Get_Nextval(SString T, int nextval[])
+{
+    int i = 1, j = 0;
+    nextval[1] = 0;
+    while (i < T.length) {
+        if (j == 0 || T.ch[i] == T.ch[j]) {
+            ++i;
+            ++j;
+            if (T.ch[i] != T.ch[j])
+                nextval[i] = j;
+            else
+                nextval[i] = nextval[j];
+        } else
+            j = nextval[j];
+    }
+}
