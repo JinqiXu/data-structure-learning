@@ -22,3 +22,5 @@ void Concat(SString& T, SString S1, SString S2);
 int Index(SString S, SString T);
 void ClearStr(SString& S);
 void DestroyStr(SString& S);
+
+int Index_Normal(SString S, SString T);

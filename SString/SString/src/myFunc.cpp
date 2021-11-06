@@ -81,3 +81,5 @@ int Index(SString S, SString T)
     }
     return 0;
 }
+
+int Index_Normal()
