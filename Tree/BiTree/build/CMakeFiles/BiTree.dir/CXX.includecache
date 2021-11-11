@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xujinqi/data-structure-learning/Tree/BiTree/src/main.cpp
+myFunc.h
+/home/xujinqi/data-structure-learning/Tree/BiTree/src/myFunc.h
+iostream
+-
+
+/home/xujinqi/data-structure-learning/Tree/BiTree/src/myFunc.h
+

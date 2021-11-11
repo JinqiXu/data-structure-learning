@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/BiTree.dir/src/main.cpp.o CMakeFiles/BiTree.dir/src/myFunc.cpp.o  -o ../bin/BiTree 
