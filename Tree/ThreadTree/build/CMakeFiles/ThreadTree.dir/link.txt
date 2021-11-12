@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/ThreadTree.dir/src/myFunc.cpp.o CMakeFiles/ThreadTree.dir/src/main.cpp.o  -o ../bin/ThreadTree 

@@ -39,7 +39,6 @@ void PostOrder(BiTree T)
         cout << T->data << endl;
     }
 }
-/*
 
 void LevelOrder(BiTree T)
 {
@@ -47,12 +46,11 @@ void LevelOrder(BiTree T)
     InitQueue(Q);
     BiTree p;
     EnQueue(Q, T);
-    while (!isEmpty) {
+    while (!Empty(Q)) {
         DeQueue(Q, p);
-
-        if (p->lchild != null)
+        if (p->lchild != NULL)
             EnQueue(Q, p->lchild);
-        if (p->rchild != null)
+        if (p->rchild != NULL)
             EnQueue(Q, p->rchild);
     }
 }
@@ -70,12 +68,12 @@ bool Empty(LinkQueue Q)
     return false;
 }
 
-void EnQueue(LinkQueue& Q, ElemType e)
+void EnQueue(LinkQueue& Q, BiTNode* e)
 {
     LinkNode* p = (LinkNode*)malloc(sizeof(LinkNode));
     if (!p)
         return;
-    p->data.data = e.data;
+    p->data->data = e->data;
 
     p->next = NULL;
     Q.rear->next = p;
@@ -83,16 +81,74 @@ void EnQueue(LinkQueue& Q, ElemType e)
     return;
 }
 
-void DeQueue(LinkQueue& Q, ElemType& e)
+void DeQueue(LinkQueue& Q, BiTNode* e)
 {
     if (Q.rear == Q.front)
         return;
     LinkNode* p = Q.front->next;
     e = p->data;
+
     Q.front->next = p->next;
     if (Q.rear == p)
         Q.rear = Q.front;
     free(p);
     return;
 }
-* /
+
+void InOrder2(BiTree T)
+{
+    BiTree p = T;
+    BiTNode* stack[MaxSize];
+    int top = -1;
+    while (p || top != -1) {
+        if (p) {
+            stack[++top] = p;
+            p = p->lchild;
+        } else {
+            p = stack[top--];
+            cout << p->data << " ";
+            p = p->rchild;
+        }
+    }
+    cout << endl;
+}
+
+void PreOrder2(BiTree T)
+{
+    BiTree p = T;
+    BiTNode* stack[MaxSize];
+    int top = -1;
+    while (p || top != -1) {
+        if (p) {
+            cout << p->data << " ";
+            stack[++top] = p;
+            p = p->lchild;
+        } else {
+            p = stack[top--];
+            p = p->rchild;
+        }
+    }
+}
+
+void PostOrder2(BiTree T)
+{
+    BiTree p = T, r = NULL;
+    BiTNode* stack[MaxSize];
+    int top = -1;
+    while (p || top != -1) {
+        if (p) {
+            stack[++top] = p;
+            p = p->lchild;
+        } else {
+            p = stack[top--];
+            if (p->rchild && p->rchild != r)
+                p = p->rchild;
+            else {
+                p = stack[top--];
+                cout << p->data << " ";
+                r = p;
+                p = NULL;
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+/home/xujinqi/data-structure-learning/Tree/ThreadTree/build/CMakeFiles/rebuild_cache.dir
+/home/xujinqi/data-structure-learning/Tree/ThreadTree/build/CMakeFiles/edit_cache.dir
+/home/xujinqi/data-structure-learning/Tree/ThreadTree/build/CMakeFiles/ThreadTree.dir

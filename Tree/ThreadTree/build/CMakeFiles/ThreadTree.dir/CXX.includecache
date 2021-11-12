@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xujinqi/data-structure-learning/Tree/ThreadTree/src/main.cpp
+myFunc.h
+/home/xujinqi/data-structure-learning/Tree/ThreadTree/src/myFunc.h
+cstdio
+-
+cstdlib
+-
+iostream
+-
+
+/home/xujinqi/data-structure-learning/Tree/ThreadTree/src/myFunc.cpp
+myFunc.h
+/home/xujinqi/data-structure-learning/Tree/ThreadTree/src/myFunc.h
+cstdlib
+-
+cstring
+-
+iostream
+-
+
+/home/xujinqi/data-structure-learning/Tree/ThreadTree/src/myFunc.h
+
