@@ -29,3 +29,13 @@ void RemoveEdge(ALGraph& G, VertexType x, VertexType y);
 int FirstNeighbor(ALGraph G, VertexType x);
 int NextNeighbor(ALGraph G, VertexType x, VertexType y);
 int GetIndex(AdjList vex, int num, VertexType x);
+//深度优先算法实现
+bool visited[MaxSize];
+void visit();
+
+void DFSTraverse(ALGraph G);
+void DFS(ALGraph G, int v);
+
+//拓扑排序实现
+bool TopologicalSort(ALGraph G);
+int indegree[MaxSize], print[MaxSize];

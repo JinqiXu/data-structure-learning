@@ -146,3 +146,55 @@ int NextNeighbor(ALGraph G, VertexType x, VertexType y)
     }
     return res;
 }
+
+void visit() { }
+
+void DFS(ALGraph G, int v)
+{
+    visit(v);
+    visited[v] = true;
+
+    for (int w = FirstNeighbor(G, v); w > 0; w = NextNeighbor(G, v, w)) {
+        if (!visited[w]) {
+            DFS(G, w);
+        }
+    }
+}
+
+void DFSTraverse(ALGraph G)
+{
+    for (int i = 0; i < MaxSize; i++) {
+        visited[i] = false;
+    }
+
+    for (int v = 0; v < G.vexnum; i++) {
+        if (!visited[v]) {
+            DFS(G, v);
+        }
+    }
+}
+
+bool TopologicalSort(ALGraph G)
+{
+    InitStack(S);
+    for (int i = 0; i < G.vexnum; i++) {
+        if (indegree[i] == 0) {
+            Push(S, i);
+        }
+    }
+    int count = 0, v;
+    while (!isEmpty(S)) {
+        Pop(S, v);
+        print[count++] = v;
+        for (ArcNode* p = G.vertices[v].first; p; p = p->next) {
+            int w = p->adjvex;
+            if (!(--indegree[w])) {
+                Push(S, w);
+            }
+        }
+    }
+    if (count == G.vexnum)
+        return true;
+    else
+        return false;
+}
