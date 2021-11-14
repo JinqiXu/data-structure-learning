@@ -89,4 +89,55 @@ int NextNeighbor(MGraph G, VertexType x, VertexType y)
             break;
         }
     }
+    return res;
+}
+
+void BFSTraverse(MGraph G)
+{
+    for (int i = 0; i < MaxSize; i++)
+        visited[i] = false;
+
+    InitQueue(Q);
+    for (int i = 0; i < G.vexnum; i++) {
+        if (!visited[i]) {
+            BFS(G, i);
+        }
+    }
+}
+
+void BFS(MGraph G, int v)
+{
+    visit(v);
+    visited[v] = true;
+    EnQueue(Q, v);
+
+    while (!isEmpty(Q)) {
+        DeQueue(Q, v);
+        for (int w = FirstNeighbor(G, v); w > 0; w = NextNeighbor(G, v, w)) {
+            if (!visited(w)) {
+                visit(w);
+                visited[w] = true;
+                EnQueue(Q, w);
+            }
+        }
+    }
+}
+
+void BFS_MIN_DISTANCE(MGraph G, int u)
+{
+    for (int i = 0; i < MaxSize; i++) {
+        d[i] = MaxSize;
+    }
+    d[u] = 0;
+    visited[u] = true;
+    EnQueue(Q, u);
+
+    while (!isEmpty(Q)) {
+        DeQueue(Q, u);
+        for (int w = FirstNeighbor(G, u), w > 0; w = NextNeighbor(G, u, w)) {
+            visited[w] = true;
+            d[w] = d[u] + 1;
+            EnQueue(Q, w);
+        }
+    }
 }

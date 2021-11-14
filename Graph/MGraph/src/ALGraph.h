@@ -20,12 +20,12 @@ typedef struct {
     int vexnum, arcnum;
 } ALGraph;
 
-bool Adjacent(ALGraph& G, VertexType x, VertexType y);
-void Neighbors(ALGraph& G, VertexType x);
-void InsertVertex(ALGraph G, VertexType x);
+bool Adjacent(ALGraph G, VertexType x, VertexType y);
+void Neighbors(ALGraph G, VertexType x);
+void InsertVertex(ALGraph& G, VertexType x);
 void DeleteVertex(ALGraph& G, VertexType x);
 void AddEdge(ALGraph& G, VertexType x, VertexType y);
 void RemoveEdge(ALGraph& G, VertexType x, VertexType y);
-int FirstNeighbor(ALGraph& G, VertexType x);
-int NextNeighbor(ALGraph& G, VertexType x);
+int FirstNeighbor(ALGraph G, VertexType x);
+int NextNeighbor(ALGraph G, VertexType x, VertexType y);
 int GetIndex(AdjList vex, int num, VertexType x);
