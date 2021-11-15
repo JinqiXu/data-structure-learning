@@ -32,7 +32,6 @@ void ExpressionEvaluation()
     char str[MaxSize];
     while (cin >> ch) {
         str[Length++] = ch;
-        // cout << "in ch" << endl;
         if (cin.get() == '\n')
             break;
     }
@@ -47,14 +46,12 @@ void ExpressionEvaluation()
         if (isNumber(suffix_expression[i]))
             Push(S, suffix_expression[i]);
         else {
-            // cout << "1" << endl;
             char A, B;
             Pop(S, B);
             Pop(S, A);
             // char temp = Caculate(A, B, ch);
             // cout << temp << endl;
             Push(S, Caculate(A, B, suffix_expression[i]));
-            // cout << suffix_expression[i] << endl;
         }
     }
     GetTop(S, res);
@@ -66,7 +63,6 @@ bool isNumber(char ch)
 {
     if (ch >= '0' && ch <= '9')
         return true;
-    // cout << "this is an operator" << endl;
     return false;
 }
 
@@ -97,34 +93,26 @@ char Caculate(char A, char B, char OP)
 
 int Tranverse(char str[], int Length, char res[])
 {
-    // cout << "Start Tranverse" << endl;
     SqStack S;
     InitStack(S);
     int j = 0, flag = 0;
     for (int i = 0; i < Length; i++) {
         if (isNumber(str[i])) {
             res[j++] = str[i];
-            // cout << "Judege Number" << endl;
         } else {
-            // cout << "start do operator" << endl;
             if (S.top == -1) {
-                // cout << "start push" << endl;
                 Push(S, str[i]);
-                // cout << "Push operator" << endl;
             } else if (str[i] == '(') {
-                cout << "this is (" << endl;
                 Push(S, str[i]);
                 flag++;
             } else if (str[i] == ')') {
                 char TopValue;
-                cout << "this is )" << endl;
                 while (1) {
                     GetTop(S, TopValue);
-                    cout << "TopValue " << TopValue << S.top << endl;
+                    // cout << "TopValue " << TopValue << S.top << endl;
                     if (TopValue == '(') {
-                        cout << "Pop (" << endl;
                         Pop(S, TopValue);
-                        cout << TopValue << endl;
+                        // cout << TopValue << endl;
                         flag--;
                         break;
                     }
