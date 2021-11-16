@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Sort.dir/src/main.cpp.o CMakeFiles/Sort.dir/src/myFunc.cpp.o  -o ../bin/Sort 

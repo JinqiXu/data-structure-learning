@@ -1,0 +1,3 @@
+/home/xujinqi/data-structure-learning/Sort/build/CMakeFiles/rebuild_cache.dir
+/home/xujinqi/data-structure-learning/Sort/build/CMakeFiles/edit_cache.dir
+/home/xujinqi/data-structure-learning/Sort/build/CMakeFiles/Sort.dir
