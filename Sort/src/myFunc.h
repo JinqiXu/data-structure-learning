@@ -21,3 +21,6 @@ void MSort(ElemType A[], int low, int high);
 
 void Print(ElemType A[], int n);
 void Swap(int& a, int& b);
+
+void DoubleBubbleSort(ElemType A[], int n);
+void Move(ElemType A[], int n);

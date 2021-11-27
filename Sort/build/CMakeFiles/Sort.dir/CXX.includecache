@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/xujinqi/data-structure-learning/Sort/src/main.cpp
+myFunc.h
+/home/xujinqi/data-structure-learning/Sort/src/myFunc.h
+iostream
+-
+
 /home/xujinqi/data-structure-learning/Sort/src/myFunc.cpp
 myFunc.h
 /home/xujinqi/data-structure-learning/Sort/src/myFunc.h

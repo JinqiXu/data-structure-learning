@@ -229,3 +229,49 @@ void MergeSort(ElemType A[], int n)
     //基于分治的思想，分割子序列与初始序列的排列无关，最好、最坏、平均时间复杂度为O(nlog2n)
     MSort(A, 1, n);
 }
+
+void DoubleBubbleSort(ElemType A[], int n)
+{
+    int low = 1, high = n, i;
+    bool flag = true;
+
+    while (low < high && flag) {
+        flag = false;
+
+        for (i = low; i < high; i++) {
+            if (A[i] > A[i + 1]) {
+                Swap(A[i], A[i + 1]);
+                flag = true;
+            }
+        }
+        high--;
+
+        for (i = high; i > low; i--) {
+            if (A[i] < A[i - 1]) {
+                Swap(A[i], A[i - 1]);
+                flag = true;
+            }
+        }
+        low++;
+    }
+}
+
+void Move(ElemType A[], int n)
+{
+    int low = 1, high = n;
+
+    while (low < high) {
+        while (low < high && A[low] % 2 == 1) {
+            low++;
+        }
+        while (low < high && A[high] % 2 == 0) {
+            high--;
+        }
+        if (low < high) {
+            Swap(A[low], A[high]);
+
+            low++;
+            high--;
+        }
+    }
+}
